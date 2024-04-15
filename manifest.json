@@ -1,14 +1,14 @@
 {
     "manifest_version": 3,
-    "name": "GPT_Next",
-    "version": "1.0",
-    "description": "GPT_Next - Hỗ trợ học tập trực tuyến trên FPT Edunext",
+    "name": "Next Assistant",
+    "version": "0.0",
+    "description": "Hỗ trợ học tập trực tuyến trên FPT Edunext",
     "action": {
 		"default_popup": "./popup/popup.html"
 	},
 	"default_locale": "vi",
 	"options_page": "./popup/popup.html",
-	"homepage_url": "https://github.com/makecolour/NextAssistant",
+	"homepage_url": "https://fptuniversity-my.sharepoint.com/:f:/g/personal/quyennthe180534_fpt_edu_vn/EnlEhTofJD5PoIORCsha6mcBJgjilkN2SXinDIFIkjbAQQ?e=GbclcS",
 	"web_accessible_resources": [
 		{
 			"resources": [
