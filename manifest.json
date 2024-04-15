@@ -1,0 +1,45 @@
+{
+    "manifest_version": 3,
+    "name": "GPT_Next",
+    "version": "1.0",
+    "description": "GPT_Next - Hỗ trợ học tập trực tuyến trên FPT Edunext",
+    "action": {
+		"default_popup": "./popup/popup.html"
+	},
+	"default_locale": "vi",
+	"options_page": "./popup/popup.html",
+	"homepage_url": "https://github.com/makecolour/NextAssistant",
+	"web_accessible_resources": [
+		{
+			"resources": [
+				"/_locales/vi/messages.json",
+				"/_locales/en/messages.json"
+			],
+			"matches": ["<all_urls>"]
+		}
+	],
+    "permissions": [
+        "storage"
+    ],
+	"background": {
+		"service_worker": "./service/service-worker.js"
+	  },
+    "content_scripts": [
+		{
+			"matches": [
+				"*://fu-edunext.fpt.edu.vn/course/activity/question?id=*"
+			],
+			"js": [
+				"./utils/storage.js",
+				"./content/auto_edunext.js"
+			],
+			"run_at": "document_end"
+		}
+    ],
+	"icons":{
+		"16": "./assets/logo.png",
+		"32": "./assets/logo.png",
+		"48": "./assets/logo.png",
+		"128": "./assets/logo.png"
+	}
+}
