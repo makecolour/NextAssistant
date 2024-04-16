@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap -->
+    <link href="../utils/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../utils/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../utils/style.css">
+</head>
+<body>
+    <div class="input-group">
+        <input type="text" class="form-control" placeholder="API KEY" aria-label="API Key" id="key" style="margin-bottom: 0px;">
+        <span class="input-group-text" id="togglePassword" style="cursor: pointer; user-select: none;">Toggle Password</span>
+        </span>
+        <button class="btn btn-primary saveBtn" type="button" id ="save">Save</button>
+    </div>
+
+    <div>
+        <label for="customRange3" class="form-label"></label>
+        <input type="range" class="form-range" min="0" max="1" step="0.05" id="customRange3">
+    </div>
+</body>
+<script src="../utils/storage.js"></script>
+<script src="./popup.js"></script>
+</html>
