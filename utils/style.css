@@ -1,3 +1,101 @@
 body {
     width: 450px;
 }
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: rgb(242, 112, 27);
+
+}
+
+.theme {
+    transform: translateX(80px) translateY(4px);
+    position: absolute;
+    padding: 2px;
+
+}
+
+.settings {
+    width: 30px;
+    height: 30px;
+}
+
+.saveBtn {
+    background: #f2701b;
+    border-color: #f2701b;
+}
+
+.key {
+    border-color: #f2701b;
+}
+  
+#customRange3::-webkit-slider-thumb {
+    background-color: rgb(242, 112, 27) !important;
+}
+
+.footer, .title {
+    text-align: center;
+}
+
+.footer {
+    background-color: black;
+}
+
+.footer div {
+    color: white;
+    padding: 10px;
+}
+
+.footer p {
+    margin: 0px;
+}
+
+.footer a {
+    color: rgb(240, 111, 27);
+}
+
+.settingBtn .theme{
+    background-color: rgba(0,0,0,0);
+    border-color: rgba(0, 0,0 ,0);
+    color: rgb(242,112,27);
+    padding: 4px 4px;
+    margin: auto 0;
+}
+
+.settingBtn .theme:focus{
+    background-color: rgba(0,0,0,0);
+    border-color: rgba(0, 0,0 ,0);
+}
+
+.settingBtn .theme:hover {
+    background-color: rgba(0,0,0,0);
+    border-color: rgba(0, 0,0 ,0.25);
+}
+
+.settingBtn .theme:active {
+    background-color: rgba(0,0,0,0);
+    border-color: rgba(0, 0,0 ,0);
+}
+
+.input-group .saveBtn:focus{
+    background-color: rgb(242, 112, 27)
+}
+
+.input-group .saveBtn:hover{
+    background-color: white;
+    border-color: rgb(242, 112, 27);
+    color: rgb(242, 112, 27);
+}
+
+.input-group .saveBtn:active{
+    background-color: rgb(242, 112, 27);  
+}
+
+.input-group .saveBtn{
+    background-color: rgb(242, 112, 27);
+    border-color: white;
+}

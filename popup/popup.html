@@ -13,16 +13,48 @@
     <link rel="stylesheet" href="../utils/style.css">
 </head>
 <body>
+    <div class="title">
+        <div class="titleName">NextAssisstant</div>
+        <div class="settingBtn">
+            <button class="btn btn-secondary btn-xs theme" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="test">
+                <img class="settings" src="../utils/img/setting.svg" alt="Settings">
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><h6 class="dropdown-item-text" id="theme"></h6></li>
+                <option class="dropdown-item bg" id="light" value="light"></option>
+                <option class="dropdown-item bg" id="dark" value="dark"></option>
+                <option class="dropdown-item bg" id="sys" value="sys"></option>
+                <li><h6 class="dropdown-item-text" id="language"></h6></li>
+                <option class="dropdown-item lang" value="vi" id="vi"></option>
+                <option class="dropdown-item lang" value="en" id="en"></option>
+            </div>
+        </div>
+    </div>
+    
+
     <div class="input-group">
-        <input type="text" class="form-control" placeholder="API KEY" aria-label="API Key" id="key" style="margin-bottom: 0px;">
-        <span class="input-group-text" id="togglePassword" style="cursor: pointer; user-select: none;">Toggle Password</span>
+        <input type="password" class="form-control" placeholder="API KEY" aria-label="API Key" id="key" style="margin-bottom: 0px;">
+        <span class="input-group-text" id="togglePassword" style="cursor: pointer; user-select: none;"><img src="../utils/img/eye.svg" alt="Toggle Password" class="eye"></span>
         </span>
-        <button class="btn btn-primary saveBtn" type="button" id ="save">Save</button>
+        <button class="btn btn-primary saveBtn" type="button" id ="save"><img src="../utils/img/save.svg" alt="Save"></button>
     </div>
 
     <div>
         <label for="customRange3" class="form-label"></label>
         <input type="range" class="form-range" min="0" max="1" step="0.05" id="customRange3">
+    </div>
+
+    <div class="footer">
+
+        <!-- Footer Start -->
+        <div class="row"> <!--content footer-->
+            <div class="footer">
+                <p id="madeby"></p>
+                <p id="version"></p>
+            </div>
+        </div>
+        <!-- Footer Done -->
+
     </div>
 </body>
 <script src="../utils/storage.js"></script>
